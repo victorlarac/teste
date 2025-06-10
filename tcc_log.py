@@ -13,13 +13,13 @@ logging.basicConfig(
     level=logging.INFO,
     format=log_format,
     handlers=[
-        logging.FileHandler("teste.txt", mode='w', encoding='utf-8'),
+        logging.FileHandler("log_2018_2.txt", mode='w', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
 
 class IDDocHTMLValidator:
-    def __init__(self, base_url, start_id=822840, end_id=1031746):
+    def __init__(self, base_url, start_id=180001, end_id=200000):
         self.base_url = base_url
         self.start_id = start_id
         self.end_id = end_id
